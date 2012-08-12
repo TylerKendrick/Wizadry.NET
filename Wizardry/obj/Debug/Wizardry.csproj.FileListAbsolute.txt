@@ -1,0 +1,5 @@
+C:\Users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry\bin\Debug\Wizardry.dll
+C:\Users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry\bin\Debug\Wizardry.pdb
+C:\Users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry\obj\Debug\Wizardry.dll
+C:\Users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry\obj\Debug\Wizardry.pdb

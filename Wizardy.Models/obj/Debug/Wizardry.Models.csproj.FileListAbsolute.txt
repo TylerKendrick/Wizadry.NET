@@ -1,0 +1,12 @@
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardy.Core\bin\Debug\Wizardry.Models.dll
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardy.Core\bin\Debug\Wizardry.Models.pdb
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardy.Core\obj\Debug\ResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardy.Core\obj\Debug\Wizardry.Models.dll
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardy.Core\obj\Debug\Wizardry.Models.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Wizardy.Models\bin\Debug\Wizardry.Models.dll
+C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Wizardy.Models\bin\Debug\Wizardry.Models.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Wizardy.Models\bin\Debug\Wizardry.dll
+C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Wizardy.Models\bin\Debug\Wizardry.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Wizardy.Models\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Wizardy.Models\obj\Debug\Wizardry.Models.dll
+C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Wizardy.Models\obj\Debug\Wizardry.Models.pdb

@@ -1,0 +1,16 @@
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\ResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\Step.baml
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\Wizard.baml
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\Step.g.cs
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\Wizard.g.cs
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\Wizardry.Core.WPF_MarkupCompile.cache
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\Wizardry.Core.WPF.g.resources
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\Wizardry.Core.WPF.Properties.Resources.resources
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\GenerateResource.read.1.tlog
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\GenerateResource.write.1.tlog
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\bin\Debug\Wizardry.Core.WPF.dll
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\bin\Debug\Wizardry.Core.WPF.pdb
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\bin\Debug\Wizardry.Core.dll
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\bin\Debug\Wizardry.Core.pdb
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\Wizardry.Core.WPF.dll
+c:\users\user\documents\visual studio 2010\Projects\Wizadry.NET\Wizardry.Core.WPF\obj\Debug\Wizardry.Core.WPF.pdb
