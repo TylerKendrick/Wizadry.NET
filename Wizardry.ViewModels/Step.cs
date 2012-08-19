@@ -11,20 +11,10 @@ namespace Wizardry.ViewModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public event Action<Wizardry.IStep> OnStart
-        {
-            add { model.OnStart += value; }
-            remove { model.OnStart -= value; }
-        }
         public event Action<Wizardry.IStep> OnExecute
         {
             add { model.OnExecute += value; }
             remove { model.OnExecute -= value; }
-        }
-        public event Action<Wizardry.IStep> OnComplete
-        {
-            add { model.OnComplete += value; }
-            remove { model.OnComplete -= value; }
         }
         public event Action<Wizardry.IStep> OnLoad
         {
@@ -47,9 +37,14 @@ namespace Wizardry.ViewModels
             this.model = handle;
         }
 
-        public void Load()
+        public virtual void Load()
         {
             model.Load();
+        }
+
+        public virtual void Execute()
+        {
+            model.Execute();
         }
 
         private void NotifyPropertyChanged(string propertyName)

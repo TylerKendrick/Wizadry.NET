@@ -9,8 +9,8 @@ namespace Wizardry.ViewModels
         protected Models.Wizard model = null;
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private ViewModels.IStep step = null;
-        public ViewModels.IStep Step 
+        private Wizardry.IStep step = null;
+        public Wizardry.IStep Step 
         { 
             get { return step; }
             protected set
@@ -41,13 +41,15 @@ namespace Wizardry.ViewModels
             model = handle;
             btnNext = new ViewModels.Button();
             btnNext.OnClick += model.Next;
-            model.OnNext += OnNextStep;
             InitializeContent();
+            model.OnNext += OnNextStep;
         }
 
-        private void OnNextStep(Models.Step step)
+        private void OnNextStep(Wizardry.IStep step)
         {
-            this.Step = ViewModels.Registration.GetStep(step);
+            Models.Step modelStep = (Models.Step)step;
+            this.Step = ViewModels.Registration.Get(modelStep);
+            this.Step.Load();
         }
 
         private void InitializeContent()

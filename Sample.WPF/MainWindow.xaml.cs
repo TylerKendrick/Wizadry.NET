@@ -20,12 +20,14 @@ namespace Sample.WPF
 
         private void InitializeWizard()
         {
-            Wizardry.Views.Registration.Register<Step1ViewModel, Step1>();
-            Wizardry.ViewModels.Registration.Register<Step1Model, Step1ViewModel>();
+            Step1Model model = new Step1Model();
+            Step1ViewModel viewModel = new Step1ViewModel(model);
+            Step1View view = new Step1View();
+            
+            Wizardry.Views.Registration.Register(viewModel, view);
+            Wizardry.ViewModels.Registration.Register(model, viewModel);
 
-            Step1Model step1 = new Step1Model();
-
-            this.wizardModel = new Wizardry.Models.Wizard(step1);
+            this.wizardModel = new Wizardry.Models.Wizard(model);
             this.wizardModel.OnFinished += delegate { this.Close(); };
             this.wizardViewModel = new Wizardry.ViewModels.Wizard(wizardModel);
             this.wizardView.DataContext = this.wizardViewModel;

@@ -3,10 +3,9 @@ using System.Linq;
 
 namespace Sample.WPF.Steps.Views
 {
-    public partial class Step1 : Wizardry.Views.Step
+    public partial class Step2View : Wizardry.Views.Step
     {
-        public Step1()
-            : base()
+        public Step2View()
         {
             InitializeComponent();
         }

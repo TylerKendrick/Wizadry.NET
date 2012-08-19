@@ -8,20 +8,28 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="template">
+                <this:Step />
+            </DataTemplate>
+        </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         
         <ContentPresenter x:Name="currentStep" Grid.Row="0" 
-                          Content="{Binding Path=Step}"/>
+                          Content="{Binding Path=Step}">
+            <ContentPresenter.ContentTemplateSelector>
+                <this:ViewTemplateSelector />
+            </ContentPresenter.ContentTemplateSelector>
+        </ContentPresenter>
         
         <this:Button x:Name="btnNext" Grid.Row="1"
                      Width="100" Height="30"
                      HorizontalAlignment="Right" VerticalAlignment="Bottom"
                      DataContext="{Binding Path=BtnNext}"
                      Content="{Binding Path=Content}"
-                     IsEnabled="{Binding Path=IsEnabled}">
-        </this:Button>
+                     IsEnabled="{Binding Path=IsEnabled}"/>
     </Grid>
 </UserControl>

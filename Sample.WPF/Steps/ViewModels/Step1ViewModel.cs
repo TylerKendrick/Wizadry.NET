@@ -10,5 +10,11 @@ namespace Sample.WPF.Steps.ViewModels
         {
             this.Title = "Step 1";
         }
+
+        public override void Load()
+        {
+            base.Load();
+            this.Execute();
+        }
     }
 }

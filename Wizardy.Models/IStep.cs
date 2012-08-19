@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Linq;
 
-namespace Wizardry.ViewModels
+namespace Wizardry.Models
 {
     public interface IStep : Wizardry.IStep
     {
         event Action<Wizardry.IStep> OnExecute;
         event Action<Wizardry.IStep> OnLoad;
-        string Title { get; }
+        event Action<Wizardry.IStep> OnStart;
+        event Action<Wizardry.IStep> OnComplete;
     }
 }

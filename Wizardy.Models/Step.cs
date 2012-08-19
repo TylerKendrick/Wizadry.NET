@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Wizardry.Models
 {
-    public abstract partial class Step : IStep
+    public partial class Step : Models.IStep
     {
         public event Action<Wizardry.IStep> OnStart;
         public event Action<Wizardry.IStep> OnExecute;
@@ -21,11 +21,16 @@ namespace Wizardry.Models
         {
             OnStart += Started;
         }
-        public void Execute()
+
+        public virtual void Execute()
         {
-            OnStart.BeginInvoke(this, Completed, null);
+            if (OnStart != null)
+            {
+                OnStart(this);
+                Completed();
+            }
         }
-        public void Load()
+        public virtual void Load()
         {
             if (OnLoad != null)
             {
@@ -33,9 +38,12 @@ namespace Wizardry.Models
             }
         }
 
-        private void Completed(IAsyncResult result)
+        private void Completed()
         {
-            OnComplete(this);
+            if (OnComplete != null)
+            {
+                OnComplete(this);
+            }
         }
         private void Started(Wizardry.IStep step)
         {

@@ -60,8 +60,10 @@
     <Compile Include="Button.xaml.cs">
       <DependentUpon>Button.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IStep.cs" />
     <Compile Include="Registration.cs" />
     <Compile Include="Step.cs" />
+    <Compile Include="ViewTemplateSelector.cs" />
     <Compile Include="Wizard.xaml.cs">
       <DependentUpon>Wizard.xaml</DependentUpon>
       <SubType>Code</SubType>

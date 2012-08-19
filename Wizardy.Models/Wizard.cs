@@ -8,14 +8,15 @@ namespace Wizardry.Models
     {
         private IEnumerator<Models.Step> enumerator;
         
-        public event Action<Models.Step> OnNext;
+        public event Action<Wizardry.IStep> OnNext;
         public event Action OnFinished;
         public IEnumerable<Models.Step> Steps { get; private set; }
 
-        private Models.Step step = null;
-        public Models.Step Step 
+        private Wizardry.IStep step = null;
+        public Wizardry.IStep Step 
         { 
-            get { return step; } 
+            get { return step; }
+            private set { step = value; }
         }
 
         public Wizard(params Models.Step[] steps)
@@ -29,7 +30,7 @@ namespace Wizardry.Models
             OnNext += OnNextCalled;
         }
 
-        private void OnNextCalled(Models.Step step)
+        private void OnNextCalled(Wizardry.IStep step)
         {
             step.Load();
         }

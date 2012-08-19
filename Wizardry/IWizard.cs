@@ -4,6 +4,6 @@ namespace Wizardry
 {
     public interface IWizard
     {
-        void Next();
+        Wizardry.IStep Step { get; }
     }
 }

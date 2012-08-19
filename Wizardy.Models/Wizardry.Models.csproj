@@ -40,10 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IStep.cs" />
     <Compile Include="IWizard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Step.cs" />
-    <Compile Include="Step.Increment.cs" />
     <Compile Include="Wizard.cs" />
   </ItemGroup>
   <ItemGroup>
