@@ -8,10 +8,10 @@ namespace Wizardry.ViewModels
     public static class Registration
     {
         private static readonly Dictionary<Type, Type> registeredStepViews = new Dictionary<Type, Type>();
-        private static readonly Dictionary<Models.Step, ViewModels.IStep> registeredStepViewObjects = new Dictionary<Models.Step, ViewModels.IStep>();
+        private static readonly Dictionary<Models.IStep, ViewModels.IStep> registeredStepViewObjects = new Dictionary<Models.IStep, ViewModels.IStep>();
 
         public static void Register<Model, ViewModel>()
-            where Model : Models.Step
+            where Model : Models.IStep
             where ViewModel : ViewModels.IStep
         {
             registeredStepViews.Add(typeof(Model), typeof(ViewModel));
@@ -23,7 +23,7 @@ namespace Wizardry.ViewModels
             registeredStepViewObjects.Add(model, viewModel);
         }
 
-        public static ViewModels.IStep Get(Models.Step model)
+        public static ViewModels.IStep Get(Models.IStep model)
         {
             Type modelType = model.GetType();
             Type viewModelType = null;

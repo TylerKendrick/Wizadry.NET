@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MyLabel.cs" />
     <Compile Include="Steps\Models\Step1Model.cs" />
     <Compile Include="Steps\ViewModels\Step3ViewModel.cs" />
     <Compile Include="Steps\ViewModels\Step2ViewModel.cs" />

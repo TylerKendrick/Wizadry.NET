@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Wizardry.Models
 {
-    public partial class Step : Models.IStep
+    public abstract partial class Step : Models.IStep
     {
         public event Action<Wizardry.IStep> OnStart;
         public event Action<Wizardry.IStep> OnExecute;

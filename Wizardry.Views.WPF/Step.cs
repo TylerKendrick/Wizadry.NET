@@ -4,7 +4,7 @@ using System.Windows.Controls;
 
 namespace Wizardry.Views
 {
-    public class Step : UserControl, Wizardry.IStep
+    public class Step : UserControl, Views.IStep
     {
         public ViewModels.IStep ViewModel { get; set; }
 

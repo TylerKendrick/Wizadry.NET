@@ -12,7 +12,7 @@ namespace Wizardry.Views
             if (item != null)
             {
                 ViewModels.IStep instance = (ViewModels.IStep)item;
-                Views.Step viewInstance = Registration.Get(instance);
+                Views.IStep viewInstance = Registration.Get(instance);
                 Type viewType = viewInstance.GetType();
 
                 if (viewType == null)

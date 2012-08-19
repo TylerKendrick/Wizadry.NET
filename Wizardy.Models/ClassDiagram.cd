@@ -1,32 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Wizardry.Core.Wizard">
-    <Position X="3" Y="3" Width="1.5" />
+  <Class Name="Wizardry.Models.Step">
+    <Position X="2.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>A0ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAIAgCAAQAAAAEYAEAAAAAACAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Step.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Wizardry.Models.Wizard">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>A0ABAAAAAAAAAAAAAAAIAAAAAAAgCAAAIAAAAAAAAAA=</HashCode>
       <FileName>Wizard.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Wizardry.Core.Step">
-    <Position X="1" Y="3" Width="1.5" />
+  <Interface Name="Wizardry.Models.IWizard">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAACAAAAAAAAQAEBAAAAAAAAAAAAAAAAAAAAACQAA=</HashCode>
-      <FileName>Step.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Interface Name="Wizardry.Core.IStep">
-    <Position X="1" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAACAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IStep.cs</FileName>
+      <HashCode>AkABAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IWizard.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Wizardry.Core.IWizard">
-    <Position X="3" Y="0.5" Width="1.5" />
+  <Interface Name="Wizardry.Models.IStep">
+    <Position X="2.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AkABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IWizard.cs</FileName>
+      <HashCode>AAIAACAAAAAAAAAAEAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IStep.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

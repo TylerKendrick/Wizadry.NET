@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Wizardry.Views
 {
-    interface IStep : Wizardry.IStep
+    public interface IStep : Wizardry.IStep
     {
         ViewModels.IStep ViewModel { get; set; }
     }

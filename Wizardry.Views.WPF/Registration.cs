@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 
 namespace Wizardry.Views
 {
@@ -8,15 +9,6 @@ namespace Wizardry.Views
     {
         private static readonly Dictionary<Type, Type> registeredStepViews = new Dictionary<Type, Type>();
         private static readonly Dictionary<ViewModels.IStep, Views.Step> registeredStepViewObjects = new Dictionary<ViewModels.IStep, Views.Step>();
-
-        public static Type Get(Type index)
-        {
-            return registeredStepViews[index];
-        }
-        public static Views.Step Get(ViewModels.IStep index)
-        {
-            return registeredStepViewObjects[index];
-        }
 
         public static void Register<ViewModel, View>()
             where ViewModel : ViewModels.IStep
@@ -28,6 +20,24 @@ namespace Wizardry.Views
         {
             registeredStepViews.Add(viewModel.GetType(), view.GetType());
             registeredStepViewObjects.Add(viewModel, view);
+        }
+
+        public static Views.IStep Get(ViewModels.IStep viewModel)
+        {
+            Type modelType = viewModel.GetType();
+            Type viewModelType = null;
+            Views.Step result = registeredStepViewObjects[viewModel];
+
+            if (result == null)
+            {
+                viewModelType = registeredStepViews[modelType];
+                ConstructorInfo constructor = viewModelType.GetConstructor(new Type[] { modelType });
+                object instance = constructor.Invoke(new object[] { viewModel });
+                result = instance as Views.Step;
+            }
+
+            result.DataContext = viewModel;
+            return result;
         }
     }
 }

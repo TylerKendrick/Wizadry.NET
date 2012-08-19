@@ -25,3 +25,5 @@ C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Sample.WPF\obj\x
 C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Sample.WPF\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Sample.WPF\obj\x86\Debug\Sample.WPF.exe
 C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Sample.WPF\obj\x86\Debug\Sample.WPF.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Sample.WPF\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\Documents\Visual Studio 2010\Projects\Wizadry.NET\Sample.WPF\obj\x86\Debug\Sample.WPF_MarkupCompile.lref
