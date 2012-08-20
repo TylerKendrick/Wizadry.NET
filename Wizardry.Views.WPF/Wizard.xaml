@@ -8,17 +8,19 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Grid.Resources>
+            <this:ViewTemplateSelector x:Key="viewTemplate"/>    
+        </Grid.Resources>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         
-        <ContentPresenter x:Name="currentStep" Grid.Row="0" 
-                          Content="{Binding Path=Step}">
-            <ContentPresenter.ContentTemplateSelector>
-                <this:ViewTemplateSelector />
-            </ContentPresenter.ContentTemplateSelector>
-        </ContentPresenter>
+        <ContentControl x:Name="currentStep" Grid.Row="0" 
+                        Content="{Binding Path=Step}"
+                        ContentTemplateSelector="{StaticResource ResourceKey=viewTemplate}"
+                        ContentTemplate="{Binding Source={StaticResource ResourceKey=viewTemplate}, Path=Template}"/>
         
         <this:Button x:Name="btnNext" Grid.Row="1"
                      Width="100" Height="30"

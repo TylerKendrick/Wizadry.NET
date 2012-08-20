@@ -12,15 +12,18 @@ namespace Wizardry.Views
             if (item != null)
             {
                 ViewModels.IStep instance = (ViewModels.IStep)item;
-                Views.IStep viewInstance = Registration.Get(instance);
-                Type viewType = viewInstance.GetType();
-
-                if (viewType == null)
-                {
-                    viewType = typeof(Views.Step);
-                }
+                Views.Step viewInstance = Registration.Get(instance);
                 
-                return new DataTemplate(viewType);
+                if (viewInstance != null)
+                {
+                    viewInstance.DataContext = instance;
+                    Type viewType = viewInstance.GetType();
+                    FrameworkElementFactory factory = new FrameworkElementFactory(viewType);
+                    DataTemplate template = new DataTemplate(viewType);
+                    template.VisualTree = factory;
+
+                    return template;
+                }
             }
             return base.SelectTemplate(item, container);
         }

@@ -22,7 +22,7 @@ namespace Wizardry.Views
             registeredStepViewObjects.Add(viewModel, view);
         }
 
-        public static Views.IStep Get(ViewModels.IStep viewModel)
+        public static Views.Step Get(ViewModels.IStep viewModel)
         {
             Type modelType = viewModel.GetType();
             Type viewModelType = null;
@@ -36,7 +36,6 @@ namespace Wizardry.Views
                 result = instance as Views.Step;
             }
 
-            result.DataContext = viewModel;
             return result;
         }
     }
